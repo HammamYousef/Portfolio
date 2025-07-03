@@ -3,9 +3,7 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* ========================
-     🎨 Custom Design Tokens
-     ======================== */
+  --breakpoint-2xl: 1400px;
 
   /* Font Family */
   --font-sans: 'Inter', sans-serif;
@@ -149,4 +147,8 @@
       transform: translate(calc(-50% - 0.5rem));
     }
   }
+}
+
+@utility heading {
+  @apply font-bold text-4xl md:text-5xl text-center;
 }
