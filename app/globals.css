@@ -2,6 +2,12 @@
 
 @custom-variant dark (&:where(.dark, .dark *));
 
+@layer base {
+  html {
+    @apply scroll-smooth;
+  }
+}
+
 @theme {
   --breakpoint-2xl: 1400px;
 
