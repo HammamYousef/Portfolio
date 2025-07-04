@@ -182,3 +182,50 @@ export const socialMedia = [
     img: "/link.svg",
   },
 ];
+
+export const skillsIcons = {
+  frontend: [
+    { id: 1, name: "HTML", img: "html5/html5-original.svg" },
+    { id: 2, name: "CSS", img: "css3/css3-original.svg" },
+    { id: 3, name: "JavaScript", img: "javascript/javascript-original.svg" },
+    { id: 4, name: "TypeScript", img: "typescript/typescript-original.svg" },
+    { id: 5, name: "Bootstrap", img: "bootstrap/bootstrap-original.svg" },
+    { id: 6, name: "Tailwind CSS", img: "tailwindcss/tailwindcss-original.svg" },
+    { id: 7, name: "React", img: "react/react-original.svg" },
+    { id: 8, name: "React Router", img: "reactrouter/reactrouter-original.svg" },
+    { id: 9, name: "Next.js", img: "nextjs/nextjs-original.svg" },
+    { id: 10, name: "Redux", img: "redux/redux-original.svg" },
+    { id: 11, name: "Three.js", img: "threejs/threejs-original.svg" },
+    { id: 12, name: "Framer", img: "framermotion/framermotion-original.svg" },
+  ],
+
+  backend: [
+    { id: 1, name: "Node.js", img: "nodejs/nodejs-original-wordmark.svg" },
+    { id: 2, name: "Express.js", img: "express/express-original.svg" },
+    { id: 3, name: "MongoDB", img: "mongodb/mongodb-original.svg" },
+    { id: 4, name: "MySQL", img: "mysql/mysql-original.svg" },
+    { id: 5, name: "Firebase", img: "firebase/firebase-plain.svg" },
+  ],
+
+  tools: [
+    { id: 1, name: "Git", img: "git/git-original.svg" },
+    { id: 2, name: "GitHub", img: "github/github-original.svg" },
+    { id: 3, name: "VS Code", img: "vscode/vscode-original.svg" },
+    { id: 4, name: "Figma", img: "figma/figma-original.svg" },
+    { id: 5, name: "Postman", img: "postman/postman-original.svg" },
+    { id: 6, name: "Docker", img: "docker/docker-original.svg" },
+  ],
+
+  floatingIcons: [
+    { id: 1, name: "HTML", img: "html5/html5-original.svg" },
+    { id: 2, name: "CSS", img: "css3/css3-original.svg" },
+    { id: 3, name: "JavaScript", img: "javascript/javascript-original.svg" },
+    { id: 4, name: "TypeScript", img: "typescript/typescript-original.svg" },
+    { id: 5, name: "React", img: "react/react-original.svg" },
+    { id: 6, name: "Next.js", img: "nextjs/nextjs-original.svg" },
+    { id: 7, name: "Node.js", img: "nodejs/nodejs-original.svg" },
+    { id: 8, name: "Express.js", img: "express/express-original.svg" },
+    { id: 9, name: "MongoDB", img: "mongodb/mongodb-original.svg" },
+    { id: 10, name: "GitHub", img: "github/github-original.svg" },
+  ]
+};
