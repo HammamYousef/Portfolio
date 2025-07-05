@@ -1,6 +1,8 @@
 import { FaLocationArrow } from "react-icons/fa";
 import MagicButton from "./ui/MagicButton";
 import { socialMedia } from "@/data";
+import { LinkPreview } from "./ui/link-preview";
+import Image from "next/image";
 
 const Footer = () => {
   return (
@@ -22,7 +24,11 @@ const Footer = () => {
           Reach out to me today and let&apos;s discuss how I can help you
           achieve your goals.
         </p>
-        <a href="mailto:eng.hammam.yousef@gmail.com" target="_blank" rel="noopener noreferrer">
+        <a
+          href="mailto:eng.hammam.yousef@gmail.com"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <MagicButton
             title="Let's get in touch"
             icon={<FaLocationArrow />}
@@ -36,14 +42,42 @@ const Footer = () => {
         </p>
 
         <div className="flex items-center md:gap-3 gap-6 mt-3 sm:mt-0">
-          {socialMedia.map((info) => (
-            <div
-              key={info.id}
-              className="w-10 h-10 cursor-pointer flex justify-center items-center backdrop-filter backdrop-blur-lg saturate-180 bg-opacity-75 bg-black-200 rounded-lg border border-black-300"
-            >
-              <img src={info.img} alt="icons" width={20} height={20} />
-            </div>
-          ))}
+          {socialMedia.map((info) => {
+            if (info.isStatic) {
+              return (
+                <LinkPreview
+                  key={info.id}
+                  url={info.url}
+                  isStatic={true}
+                  imageSrc={info.imageSrc}
+                >
+                  <div className="w-10 h-10 cursor-pointer flex justify-center items-center backdrop-filter backdrop-blur-lg saturate-180 bg-opacity-75 bg-black-200 rounded-lg border border-black-300">
+                    <Image
+                      src={info.img}
+                      alt="icons"
+                      width={20}
+                      height={20}
+                      className={`${info.size ? "size-8" : ""}`}
+                    />
+                  </div>
+                </LinkPreview>
+              );
+            }
+
+            return (
+              <LinkPreview key={info.id} url={info.url} isStatic={false}>
+                <div className="w-10 h-10 cursor-pointer flex justify-center items-center backdrop-filter backdrop-blur-lg saturate-180 bg-opacity-75 bg-black-200 rounded-lg border border-black-300">
+                  <Image
+                    src={info.img}
+                    alt="icons"
+                    width={20}
+                    height={20}
+                    className={`${info.size ? "size-8" : ""}`}
+                  />
+                </div>
+              </LinkPreview>
+            );
+          })}
         </div>
       </div>
     </footer>

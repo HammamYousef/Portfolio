@@ -1,7 +1,8 @@
 export const navItems = [
   { name: "About", link: "#about" },
   { name: "Projects", link: "#projects" },
-  { name: "Testimonials", link: "#testimonials" },
+  { name: "Skills", link: "#skills" },
+  { name: "Experience", link: "#experience" },
   { name: "Contact", link: "#contact" },
 ];
 
@@ -168,18 +169,39 @@ export const workExperience = [
   },
 ];
 
-export const socialMedia = [
+type SocialMediaItem = {
+  id: number;
+  img: string;
+  url: string;
+  isStatic?: boolean;
+  imageSrc?: string;
+  size?: boolean;
+}& (
+  | { isStatic: true; imageSrc: string }
+  | { isStatic?: false; imageSrc?: never }
+);
+
+export const socialMedia: SocialMediaItem[] = [
   {
     id: 1,
     img: "/git.svg",
+    url: "https://github.com/HammamYousef",
+    isStatic: false,
   },
   {
     id: 2,
-    img: "/twit.svg",
+    img: "/facebook.svg",
+    url: "https://www.facebook.com/hammam.yousef.2025",
+    size: true,
+    isStatic: true, // This is a static image, not a link preview
+    imageSrc: "/FacebookPage.PNG"
   },
   {
     id: 3,
     img: "/link.svg",
+    url: "https://www.linkedin.com/in/hammam-yousef-7029a82a8/",
+    isStatic: true, // This is a static image, not a link preview
+    imageSrc: "/linkedIn.PNG"
   },
 ];
 
