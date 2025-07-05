@@ -1,6 +1,6 @@
 # 🧑‍💻 Hammam Yousef — Portfolio
 
-A modern and interactive developer portfolio built with **Next.js 14 (App Router)**, **TypeScript**, **Tailwind CSS v4**, and **GSAP animations**.  
+A modern and interactive developer portfolio built with **Next.js 15 (App Router)**, **TypeScript**, **Tailwind CSS v4**, and **GSAP animations**.  
 It showcases my full-stack projects, technical skills, work experience, and approach — all wrapped in a sleek, responsive design.
 
 ![alt text](public/og-image.png)
