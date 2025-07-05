@@ -4,6 +4,8 @@ import { cn } from "@/lib/utils";
 import { TextGenerateEffect } from "./ui/text-generate-effect";
 import MagicButton from "./ui/MagicButton";
 import { FaLocationArrow } from "react-icons/fa";
+import { FlipWords } from "./ui/flip-words";
+import { heroFlipWords } from "@/data";
 
 const Hero = () => {
   return (
@@ -35,7 +37,7 @@ const Hero = () => {
       <div className="flex justify-center relative my-20 z-10">
         <div className="max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center">
           <p className="uppercase tracking-widest text-xs text-center text-blue-100 max-w-80">
-            Dynamic Web Magic with Next.js
+            7/5/2025
           </p>
 
           <TextGenerateEffect
@@ -43,9 +45,10 @@ const Hero = () => {
             className="text-center text-[40px] md:text-5xl lg:text-6xl"
           />
 
-          <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">
-            Hi! I&apos;m Hammam Yousef, a Full Stack developer.
-          </p>
+          <div className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">
+            Hi! I&apos;m Hammam Yousef, a<FlipWords words={heroFlipWords} className="!text-purple"/>
+          </div>
+          
 
           <a href="#projects">
             <MagicButton

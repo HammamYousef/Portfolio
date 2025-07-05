@@ -29,13 +29,15 @@ export const PinContainer = ({
   };
 
   return (
-    <div
+    <a
       className={cn(
         "relative group/pin z-50  cursor-pointer",
         containerClassName
       )}
       onMouseEnter={onMouseEnter}
       onMouseLeave={onMouseLeave}
+      href={href || "/"}
+      target="_blank"
     >
       <div
         style={{
@@ -54,7 +56,7 @@ export const PinContainer = ({
         </div>
       </div>
       <PinPerspective title={title} href={href} />
-    </div>
+    </a>
   );
 };
 
@@ -68,7 +70,7 @@ export const PinPerspective = ({
   return (
     <motion.div className="pointer-events-none w-full h-80 flex items-center justify-center opacity-0 group-hover/pin:opacity-100 z-[60] transition duration-500">
       <div className=" w-full h-full -mt-7 flex-none  inset-0">
-        <div className="absolute top-0 inset-x-0  flex justify-center">
+        <div className="absolute top-0 inset-x-0 flex justify-center">
           <a
             href={href}
             target={"_blank"}

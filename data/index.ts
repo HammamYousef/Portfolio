@@ -6,6 +6,19 @@ export const navItems = [
   { name: "Contact", link: "#contact" },
 ];
 
+export const heroFlipWords = [
+  "Full Stack Developer",
+  "Frontend Engineer",
+  "React Specialist",
+  "Next.js Developer",
+  "Creative Coder",
+  "Animation Addict",
+  "GSAP Animator",
+  "API Whisperer",
+  "JavaScript Lover",
+  "Problem Solver",
+]
+
 export const gridItems = [
   {
     id: 1,
@@ -73,35 +86,39 @@ export const gridItems = [
 export const projects = [
   {
     id: 1,
-    title: "3D Solar System Planets to Explore",
-    des: "Explore the wonders of our solar system with this captivating 3D simulation of the planets using Three.js.",
-    img: "/p1.svg",
-    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
-    link: "/ui.earth.com",
+    title: "DevFlow – Fullstack Q&A Platform",
+    des: "A Stack Overflow clone built with Next.js, Tailwind, MongoDB, and OpenAI. Features include markdown-based questions, upvotes/downvotes, authentication (GitHub, Google), and an AI-powered answer assistant.",
+    img: "/devflow.svg",
+    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/openai.svg", "/mongodb.png"],
+    link: "https://dev-flow-next-js.vercel.app/",
+    name: "/DevFlow",
   },
   {
     id: 2,
-    title: "Yoom - Video Conferencing App",
-    des: "Simplify your video conferencing experience with Yoom. Seamlessly connect with colleagues and friends.",
-    img: "/p2.svg",
-    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/c.svg"],
-    link: "/ui.yoom.com",
+    title: "Movie Finder App",
+    des: "Real-time movie search app using TMDB API and Appwrite. Features instant suggestions, trailers, genres, and favorites. Built with React, Tailwind, and TypeScript.",
+    img: "/moviefinder.svg",
+    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "app.svg", "api.png"],
+    link: "https://movie-finder-eight-psi.vercel.app/",
+    name: "/Movie Finder",
   },
   {
     id: 3,
-    title: "AI Image SaaS - Canva Application",
-    des: "A REAL Software-as-a-Service app with AI features and a payments and credits system using the latest tech stack.",
-    img: "/p3.svg",
-    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/c.svg"],
-    link: "/ui.aiimg.com",
+    title: "YCDirectory – Startup Directory CMS",
+    des: "A modern CMS platform where users can create, manage, and showcase startup profiles. Built with Next.js, Sanity CMS, and Shadcn UI, it features GitHub authentication, dynamic content editing, and a clean, responsive interface.",
+    img: "/ycdirectory.svg",
+    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "sentry.png"],
+    link: "https://yc-directory-next-js-brown.vercel.app/",
+    name: "/YC Directory",
   },
   {
     id: 4,
-    title: "Animated Apple Iphone 3D Website",
-    des: "Recreated the Apple iPhone 15 Pro website, combining GSAP animations and Three.js 3D effects..",
-    img: "/p4.svg",
-    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
-    link: "/ui.apple.com",
+    title: "Award-Winning Website Clone",
+    des: "A rebuild of Zentry.com highlighting creative frontend animation. Includes clip-path transitions, scroll triggers, bento layouts, and GSAP mastery.",
+    img: "/zentry.svg",
+    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/gsap.svg"],
+    link: "https://award-website-rust.vercel.app/",
+    name: "/Zentry Clone",
   },
 ];
 
@@ -145,6 +162,13 @@ export const workExperience = [
     desc: "Developed performant, reusable React interfaces with Redux and MUI, integrating REST APIs and optimizing load speed by 25%",
     className: "md:col-span-2",
     thumbnail: "/exp1.svg",
+  },
+  {
+    id: 2,
+    title: "Full Stack Web Development Intern",
+    desc: "Completed a 4-month internship covering a range of technologies including HTML, CSS, JavaScript, React, Bootstrap, Python, and Django.",
+    className: "md:col-span-2", // change to md:col-span-2
+    thumbnail: "/exp2.svg",
   },
 ];
 
