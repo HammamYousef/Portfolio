@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     title: "Hammam Yousef | Full Stack Developer Portfolio",
     description:
       "Browse my projects and experience as a full stack developer. Specializing in React, Next.js, TypeScript, and modern web animations.",
-    url: "https://your-portfolio-url.com",
+    url: "https://portfolio-chi-livid-76.vercel.app/",
     siteName: "Hammam Yousef Portfolio",
     images: [
       {

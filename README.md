@@ -11,7 +11,7 @@ It showcases my full-stack projects, technical skills, work experience, and appr
 
 | Category     | Technologies |
 |--------------|--------------|
-| **Frontend** | Next.js 14, React, TypeScript, Tailwind CSS, Shadcn UI |
+| **Frontend** | Next.js 15, React, TypeScript, Tailwind CSS, Shadcn UI |
 | **Animation**| GSAP, Framer Motion |
 | **CMS (Project)** | Sanity |
 | **Auth (Project)**| NextAuth.js (GitHub OAuth) |
@@ -21,7 +21,7 @@ It showcases my full-stack projects, technical skills, work experience, and appr
 
 ## 📸 Live Demo
 
-🔗 [Visit Portfolio](https://your-portfolio-url.vercel.app/)  
+🔗 [Visit Portfolio](https://portfolio-chi-livid-76.vercel.app/)  
 📷 Includes OG image support, smooth transitions, and dynamic flipping words in the hero section.
 
 ---
